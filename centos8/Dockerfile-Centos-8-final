@@ -9,7 +9,7 @@ RUN useradd remote-user && \
 
 COPY remote-key.pub /home/remote-user/.ssh/authorized_keys
 
-RUN chown remote_user:remote-user   -R /home/remot-user && \
+RUN chown remote-user:remote-user   -R /home/remot-user && \
     chmod 400 /home/remote-user/.ssh/authorized_keys
 
 RUN ssh-keygen -A && rm -rf /run/nologin
