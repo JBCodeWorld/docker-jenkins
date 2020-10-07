@@ -1,6 +1,3 @@
-# If you use this Dockerfile, you might find issues with futures lessons. Please stick to the centos7 Dockerfile.
-# You can use this one to play around
-
 FROM centos:8
 
 RUN yum -y install openssh-server
